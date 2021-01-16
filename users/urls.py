@@ -20,5 +20,5 @@ from users_register import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/', include('users_register.urls')),
+    path('', include('users_register.urls')),
 ]

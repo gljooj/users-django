@@ -19,7 +19,7 @@ def user_edit(request, id):
         edit = UserForm(request.POST, instance=user)
         if edit.is_valid():
             edit.save()
-            return redirect('/users')
+            return redirect('/')
 
     context = {'form': form, 'user': user}
     return render(request, 'users_register/user.html', context)
@@ -32,7 +32,7 @@ def user_new(request):
         edit = UserForm(request.POST)
         if edit.is_valid():
             edit.save()
-            return redirect('/users/')
+            return redirect('/')
 
     context = {'form': form}
     return render(request, 'users_register/user_new.html', context)
@@ -43,6 +43,6 @@ def user_delete(request, id):
 
     if request.method == 'POST':
         user.delete()
-        return redirect('/users')
+        return redirect('/')
     context = {'user': user}
     return render(request, 'users_register/user_delete.html', context)
