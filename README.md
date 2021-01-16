@@ -7,7 +7,8 @@ Pequeno crud de super usuarios django
 pip3 install virtualenv
 pip3 virtualenv venv
 pip install -r requirements.txt
-
+source venv/bin/activate
+-----------------------
 python manage.py migrate
 python manage.py runserver
 or
