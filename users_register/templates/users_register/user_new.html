@@ -48,9 +48,9 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
-     <li><a href="#">Admin</a></li>
-     <li><a href="#">Novo Usuario</a></li>
-     <li><a href="#">Sair</a></li>
+      <li><a href="/admin/login/?next=/admin/">Admin</a></li>
+      <li><a href="{% url 'user_list' %}">Usuarios</a></li>
+      <li><a href="/admin/login/">Sair</a></li>
     </ul>
    </div>
  </nav>
