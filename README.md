@@ -16,3 +16,6 @@ python3 manage.py migrate
 python3 manage.py runserver
 
 ```
+# How to run
+Após o migrate e com o runserver.
+Vá para o localhost em seu navegador, lá se encontrará o crud, onde você pode cadastrar, editar e excluir os usuarios.
